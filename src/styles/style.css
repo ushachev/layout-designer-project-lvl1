@@ -12,7 +12,7 @@
   --color-main-text: var(--color-dark);
 }
 
-/* COMMON STYLES START */
+/* COMMON STYLES HERE */
 
 body,
 html {
@@ -33,8 +33,18 @@ h3 {
   font-weight: normal;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1100px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -48,9 +58,50 @@ h3 {
   color: var(--color-primary);
 }
 
+.bg-pattern {
+  position: relative;
+}
+
+.bg-pattern::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(../assets/images/pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: '';
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.content {
+  column-count: 2;
+  column-gap: 30px;
+  column-width: 300px;
+}
+
+.content p:first-child {
+  margin-top: 0;
+}
+
+.btn {
+  padding: 13px 24px;
+
+  color: var(--color-white);
+
+  background-color: var(--color-primary);
+}
+
 /* COMMON STYLES END */
 
-/* UTILITIES STYLES START */
+/* UTILITIES STYLES HERE */
 
 .fs-1 {
   font-size: 72px;
@@ -60,4 +111,45 @@ h3 {
   font-size: 60px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.break-avoid {
+  break-inside: avoid;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 /* UTILITIES STYLES END */
+
+/* BLOCKS STYLES HERE */
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+
+  width: auto;
+  height: 525px;
+}
+
+/* BLOCKS STYLES END */
