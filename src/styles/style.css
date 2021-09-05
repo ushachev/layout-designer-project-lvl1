@@ -81,6 +81,14 @@ a {
   background-color: var(--color-light);
 }
 
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
 .content {
   column-count: 2;
   column-gap: 30px;
@@ -119,12 +127,24 @@ a {
   position: relative;
 }
 
+.mt-n200 {
+  margin-top: -200px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-50 {
   margin-bottom: 50px;
 }
 
 .mb-200 {
   margin-bottom: 200px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .break-avoid {
@@ -137,6 +157,14 @@ a {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 /* UTILITIES STYLES END */
