@@ -1,1 +1,63 @@
 /** CSS STYLE **/
+:root {
+  --color-white: #fff;
+  --color-white-translucent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-primary: #fe8a02;
+  --color-primary-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-translucent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+  --color-main-text: var(--color-dark);
+}
+
+/* COMMON STYLES START */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-main-text);
+  font: 16px/1.6em 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.title {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+/* COMMON STYLES END */
+
+/* UTILITIES STYLES START */
+
+.fs-1 {
+  font-size: 72px;
+}
+
+.fs-2 {
+  font-size: 60px;
+}
+
+/* UTILITIES STYLES END */

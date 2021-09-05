@@ -7,6 +7,7 @@ Educational "Project #1" is being developed as part of "Layout designer" profess
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ushachev/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ushachev/layout-designer-project-lvl1/actions)
+[![LayoutDesigner pr.#1 CI](https://github.com/ushachev/layout-designer-project-lvl1/actions/workflows/deploy.yml/badge.svg)](https://github.com/ushachev/layout-designer-project-lvl1/actions/workflows/deploy.yml)
 
 # Cognitive biases
 
