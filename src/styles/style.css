@@ -70,6 +70,18 @@ img {
   color: var(--color-white);
 }
 
+.text-white-50 {
+  color: var(--color-white-translucent);
+}
+
+.text-dark-50 {
+  color: var(--color-dark-translucent);
+}
+
+.text-brown {
+  color: var(--color-brown);
+}
+
 .bg-pattern {
   position: relative;
 }
@@ -101,6 +113,10 @@ img {
   background-color: var(--color-primary-dark);
 }
 
+.bg-brown {
+  background-color: var(--color-brown);
+}
+
 .content {
   column-count: 2;
   column-gap: 30px;
@@ -109,6 +125,10 @@ img {
 
 .content p:first-child {
   margin-top: 0;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
 }
 
 .btn {
@@ -157,10 +177,6 @@ img {
   margin-top: -200px;
 }
 
-.mb-30 {
-  margin-bottom: 30px;
-}
-
 .mr-30 {
   margin-right: 30px;
 }
@@ -173,8 +189,16 @@ img {
   margin-bottom: 20px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .mb-200 {
@@ -185,8 +209,24 @@ img {
   padding-top: 100px;
 }
 
+.pl-10 {
+  padding-left: 10px;
+}
+
 .break-avoid {
   break-inside: avoid;
+}
+
+.break-before {
+  break-before: column;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-24 {
+  font-size: 24px;
 }
 
 .fw-bold {
@@ -274,6 +314,11 @@ img {
 .main-nav-item:hover .main-nav-item-title,
 .main-nav-item:hover .main-nav-item-title::before {
   color: var(--color-white);
+}
+
+.content-image {
+  width: 578px;
+  height: auto;
 }
 
 /* BLOCKS STYLES END */
