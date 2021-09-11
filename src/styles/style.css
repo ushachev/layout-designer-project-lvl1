@@ -10,6 +10,7 @@
   --color-brown: #b09a81;
   --color-blue: #1085c5;
   --color-main-text: var(--color-dark);
+  --font-main-text: 'Open Sans', sans-serif;
   --transition-duration: 0.2s;
 }
 
@@ -23,15 +24,34 @@ html {
 
 body {
   color: var(--color-main-text);
-  font: 16px/1.6em 'Open Sans', sans-serif;
+  font: 16px/1.6em var(--font-main-text);
 }
 
 h1,
 h2,
-h3 {
+h3,
+.h3,
+.h4 {
   margin: 0;
 
+  color: var(--color-primary);
+
   font-weight: normal;
+  font-family: 'Neucha', cursive;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3,
+.h3 {
+  font-size: 34px;
 }
 
 img {
@@ -39,16 +59,8 @@ img {
   max-height: 100%;
 }
 
-.h1 {
-  font-size: 72px;
-}
-
-.h2 {
-  font-size: 60px;
-}
-
-.h3 {
-  font-size: 34px;
+.h4 {
+  font-size: 24px;
 }
 
 .container {
@@ -57,9 +69,8 @@ img {
   padding: 100px 0;
 }
 
-.title {
-  font-family: 'Neucha', cursive;
-  line-height: 1.2;
+.text-main {
+  color: var(--color-main-text);
 }
 
 .text-primary {
@@ -131,12 +142,37 @@ img {
   margin-bottom: 0;
 }
 
+.content-image {
+  width: 578px;
+  height: auto;
+}
+
+.content-title {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-family: var(--font-main-text);
+  text-transform: uppercase;
+}
+
+.content-title-light {
+  color: var(--color-white);
+
+  background-color: var(--color-brown);
+}
+
+.content-title-dark {
+  color: var(--color-brown);
+
+  background-color: var(--color-white);
+}
+
 .btn {
   position: relative;
 
   padding: 13px 24px;
-
-  text-decoration: none;
 }
 
 .btn::before {
@@ -155,6 +191,12 @@ img {
 
 .btn:hover::before {
   filter: brightness(0.92);
+}
+
+.btn-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* COMMON STYLES END */
@@ -209,32 +251,12 @@ img {
   padding-top: 100px;
 }
 
-.pl-10 {
-  padding-left: 10px;
-}
-
 .break-avoid {
   break-inside: avoid;
 }
 
 .break-before {
   break-before: column;
-}
-
-.fs-14 {
-  font-size: 14px;
-}
-
-.fs-24 {
-  font-size: 24px;
-}
-
-.fw-bold {
-  font-weight: bold;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
 }
 
 .text-center {
@@ -314,11 +336,6 @@ img {
 .main-nav-item:hover .main-nav-item-title,
 .main-nav-item:hover .main-nav-item-title::before {
   color: var(--color-white);
-}
-
-.content-image {
-  width: 578px;
-  height: auto;
 }
 
 /* BLOCKS STYLES END */
