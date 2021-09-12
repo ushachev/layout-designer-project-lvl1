@@ -59,6 +59,10 @@ img {
   max-height: 100%;
 }
 
+a {
+  color: var(--color-blue);
+}
+
 .h4 {
   font-size: 24px;
 }
@@ -91,6 +95,10 @@ img {
 
 .text-brown {
   color: var(--color-brown);
+}
+
+.text-inherit {
+  color: inherit;
 }
 
 .bg-pattern {
@@ -171,8 +179,6 @@ img {
 
 .btn {
   position: relative;
-
-  padding: 13px 24px;
 }
 
 .btn::before {
@@ -194,9 +200,31 @@ img {
 }
 
 .btn-link {
+  padding: 13px 24px;
+
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.btn-submit {
+  width: 70px;
+  height: 50px;
+  border: none;
+}
+
+.btn-submit::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(../assets/images/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  content: '';
 }
 
 /* COMMON STYLES END */
@@ -336,6 +364,40 @@ img {
 .main-nav-item:hover .main-nav-item-title,
 .main-nav-item:hover .main-nav-item-title::before {
   color: var(--color-white);
+}
+
+.call-to-action {
+  align-items: center;
+  padding: 40px 55px;
+}
+
+.call-to-action > * {
+  width: 50%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.form-control {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 15px;
+  border: none;
+}
+
+.form-text {
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 60px;
+
+  font-size: 14px;
 }
 
 /* BLOCKS STYLES END */
