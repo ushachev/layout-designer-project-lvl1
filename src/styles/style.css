@@ -77,10 +77,6 @@ a {
   color: var(--color-main-text);
 }
 
-.text-primary {
-  color: var(--color-primary);
-}
-
 .text-white {
   color: var(--color-white);
 }
